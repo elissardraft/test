@@ -1,0 +1,644 @@
+/* Fonts */
+/* rubik-regular - arabic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v31-arabic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-500 - arabic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v31-arabic_latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-700 - arabic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik-v31-arabic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* syne-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/syne-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* syne-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/syne-v24-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* syne-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/syne-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* syne-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/syne-v24-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Font  variables */
+:root {
+  --font-family-h1: Syne;
+  --font-family-h2: Syne;
+  --font-family-h3: Syne;
+  --font-family-h4: Rubik;
+  --font-family-body: Rubik;
+  --font-family-button: Rubik;
+
+  --fw-bold: 700;
+  --fw-regular: 300;
+  --font-weight-h1: var(--fw-bold);
+  --font-weight-h2: var(--fw-bold);
+  --font-weight-h3: var(--fw-bold);
+  --font-weight-h4: var(--fw-regular);
+  --font-weight-body: var(--fw-regular);
+  --font-weight-button: var(--fw-regular);
+
+  --fs-14: calc(14/16 * 1rem);
+  --fs-16: calc(16/16 * 1rem);
+  --fs-18: calc(18/16 * 1rem);
+  --fs-24: calc(24/16 * 1rem);
+  --fs-56: calc(56/16 * 1rem);
+  --fs-64: calc(64/16 * 1rem);
+  --fs-72: calc(72/16 * 1rem);
+
+  --font-size-h1: var(--fs-72);
+  --font-size-h2: var(--fs-64);
+  --font-size-h3: var(--fs-56);
+  --font-size-h4: var(--fs-24);
+  --font-size-body-large: var(--fs-18);
+  --font-size-body-Medium: var(--fs-16);
+  --font-size-button: var(--fs-14);
+  --font-size-email: var(--fs-56);
+  --font-size-navbar: var(--fs-14);
+
+  @media (max-width: 1024px) {
+    --font-size-h3: calc(36/16 * 1rem);
+  }
+
+  @media (max-width: 768px) {
+    --font-size-h1: var(--fs-64);
+    --font-size-h2: var(--fs-56);
+    --font-size-h3: var(--fs-24);
+    --font-size-h4: var(--fs-18);
+    --font-size-body-large: var(--fs-18);
+    --font-size-body-Medium: var(--fs-16);
+    --font-size-button: var(--fs-14);
+    --font-size-email: var(--fs-24);
+    --font-size-navbar: var(--fs-14);
+  }
+}
+
+/* Colors */
+:root {
+  --c-gray-50: #f9fafb;
+  --c-gray-100: #f4f4f6;
+  --c-gray-200: #e5e6eb;
+  --c-gray-300: #d3d5da;
+  --c-gray-400: #9ea3ae;
+  --c-gray-500: #6c727f;
+  --c-gray-600: #4d5461;
+  --c-gray-700: #394150;
+  --c-gray-800: #212936;
+  --c-gray-900: #161d21;
+  --c-black-secondary: #1a1a1a;
+  --c-dark-gray-secondary: #262a2c;
+  --c-light-gray-secondary: #696969;
+  --c-white-secondary: #ffffff;
+  --c-orange-brand: #ff9143;
+
+  --color-main-bg: var(--c-black-secondary);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+svg,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: var(--c-white-secondary);
+}
+
+h1 {
+  font-family: var(--font-family-h1), sans-serif;
+  font-weight: var(--font-weight-h1);
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-family: var(--font-family-h2), sans-serif;
+  font-weight: var(--font-weight-h2);
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-family: var(--font-family-h3), sans-serif;
+  font-weight: var(--font-weight-h3);
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-family: var(--font-family-h4), sans-serif;
+  font-weight: var(--font-weight-h4);
+  font-size: var(--font-size-h4);
+}
+header,
+main,
+footer {
+  margin-inline: auto;
+}
+section {
+  padding-block: calc(50 / 16 * 1rem);
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body,
+p {
+  color: var(--c-white-secondary);
+  font-family: var(--font-family-body), sans-serif;
+  font-weight: var(--font-weight-body);
+  font-size: var(--font-size-body-Medium);
+  background-color: var(--color-main-bg);
+}
+
+.body__wrapper,
+.footer__wrapper {
+  width: calc(100%-300px);
+  max-width: 1440px;
+  padding-inline: 4rem;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding-inline: 2rem;
+  }
+}
+
+.button {
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: var(--font-family-button), sans-serif;
+  font-weight: var(--font-weight-button);
+  font-size: var(--font-size-button);
+}
+
+.floating-button {
+  position: fixed;
+
+  bottom: 20px;
+  right: 20px;
+
+  background-color: var(--c-orange-brand);
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  padding: 8px;
+  opacity: 80%;
+  border-radius: 50px;
+  text-decoration: none;
+  z-index: 1000;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  margin-inline: auto;
+}
+.header {
+  position: fixed;
+  top: 0;
+}
+.header__wrapper {
+  margin-top: 30px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+
+.header__logo {
+  width: 200px;
+  margin: 2rem;
+}
+.header__navbar {
+  font-weight: var(--font-weight-body);
+  font-size: var(--font-size-navbar);
+}
+
+.header__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: calc(40 / 16 * 1rem);
+  flex-wrap: wrap;
+}
+
+.header__link {
+  opacity: 50%;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.header__button {
+  background-color: #030304;
+
+  border: var(--c-white-secondary) 3px solid;
+  width: calc(135 / 16 * 1rem);
+  height: calc(47 / 16 * 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HERO SECTION */
+
+.hero {
+  padding-top: calc(150 / 16 * 1rem);
+}
+
+.hero__h1 {
+  max-width: 891px;
+  font-size: min(--font-size-h1, 72px);
+  text-align: center;
+  margin-inline: auto;
+}
+
+.hero__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  height: 66px;
+  background-color: var(--c-orange-brand);
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* About  */
+.about {
+  margin-inline: auto;
+  display: grid;
+
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 1fr;
+
+  justify-items: center;
+  align-items: center;
+}
+
+.about__h3 {
+  font-size: min(--font-size-h3);
+  text-align: left;
+}
+
+.about__text {
+  opacity: 50%;
+  text-align: left;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-18);
+  line-height: 1.5rem;
+}
+
+.about__button {
+  grid-area: btn;
+  width: 242px;
+  height: 65px;
+  margin: 1rem;
+  background-color: var(--c-orange-brand);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    display: block;
+    margin: auto;
+  }
+}
+
+/* Project Hightlights */
+.project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__h2 {
+  max-width: 891px;
+  font-size: min(--font-size-h1, 72px);
+  text-align: center;
+}
+
+.project__wrapper {
+  margin-inline: auto;
+  width: 100%;
+}
+
+.project__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  height: 66px;
+  background-color: transparent;
+  border: 3px solid var(--c-orange-brand);
+  margin: 40px auto;
+  text-align: center;
+
+  span {
+    display: block;
+  }
+}
+
+.project__cards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5rem;
+
+  h4,
+  p {
+    line-height: 2rem;
+  }
+
+  h4 {
+    display: block;
+    margin-block: 1rem;
+  }
+
+  @media (max-width: 1024px) {
+    gap: 2rem;
+    h4,
+    p {
+      line-height: 1.5rem;
+    }
+
+    h4 {
+      margin-block: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+  }
+}
+.project__card {
+  margin-inline: auto;
+  span {
+    opacity: 50%;
+  }
+
+  a {
+    &:hover {
+      h4 {
+        color: var(--c-orange-brand);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+
+    h4,
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.project__img {
+  opacity: 50%;
+  border-radius: 20px;
+  &:hover {
+    opacity: 100%;
+    border: 2px var(--c-orange-brand) solid;
+  }
+}
+
+.testimonial {
+  position: relative;
+}
+
+.testimonial__img {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.testimonial__h1 {
+  margin-block: 2rem;
+}
+
+.testimonial__test {
+  max-width: calc(800 / 16 * 1rem);
+  opacity: 50%;
+  line-height: 1.5rem;
+  font-size: var(--font-size-body-Medium);
+}
+
+.testimonial__author {
+  margin-block: 3rem;
+  font-family: var(--font-family-h4);
+  font-size: var(--font-size-h4);
+  font-weight: var(--fw-bold);
+  line-height: 1rem;
+}
+
+.footer {
+  display: block;
+  background-color: #131313;
+  text-align: center;
+  width: 100%;
+  padding: 1.5rem;
+
+  margin-top: 2rem;
+
+  p {
+    background-color: #131313;
+  }
+}
+
+.footer__wrapper {
+  margin-inline: auto;
+}
+
+.footer__header {
+  font-family: var(--font-family-h2);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-size-h3);
+  color: var(--c-orange-brand);
+}
+
+.footer__email {
+  font-family: var(--font-family-h2);
+  font-size: var(--font-size-email);
+  font-weight: var(--font-weight-h2);
+  text-decoration: underline;
+}
+
+.footer__flex {
+  margin: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  a {
+    display: block;
+  }
+
+  img {
+    width: 1rem;
+  }
+}
+
+.footer__rights {
+  margin-inline: auto;
+
+  border-top: #d3d5da 2px solid;
+  padding: 1.5rem;
+}
+
+/* About ME PAGE */
+
+.intro {
+  border-bottom: 2px var(--c-white-secondary) solid;
+}
+
+.intro__header {
+  text-align: left;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.intro__subheader {
+  color: var(--c-white-secondary);
+  opacity: 50%;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.about__details__container {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  @media (max-width: 1024px) {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+.about__details__text {
+  color: #9ea3ae;
+  font-size: calc(--fs-24);
+  line-height: 2.5rem;
+  text-align: justify;
+  justify-self: center;
+  max-width: 500px;
+  padding-inline: 3rem;
+  margin-inline: auto;
+}
+
+.about__details__images {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.about__links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about__header {
+  line-height: 5rem;
+}
+.about__link {
+  color: #9ea3ae;
+  font-family: var(--font-family-body);
+  font-size: calc(32 / 16 * 1rem);
+}
